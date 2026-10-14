@@ -1,0 +1,40 @@
+{
+  "name": "crimepulse-backend",
+  "version": "1.0.0",
+  "description": "Node.js / Express backend API gateway and MongoDB persistence layer for CrimePulse",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node tests/db.test.js && node tests/mlService.test.js && node tests/crimeApi.test.js && node tests/auth.test.js && node tests/analysis.test.js && node tests/analyticsGateway.test.js",
+    "test:ml": "node tests/mlService.test.js",
+    "test:api": "node tests/crimeApi.test.js",
+    "test:auth": "node tests/auth.test.js",
+    "test:analysis": "node tests/analysis.test.js",
+    "test:analytics": "node tests/analyticsGateway.test.js",
+    "test:live-analytics": "node tests/liveAnalyticsGateway.test.js",
+    "test:e2e": "node tests/e2e.test.js"
+
+
+  },
+  "keywords": [
+    "crimepulse",
+    "express",
+    "mongodb",
+    "mongoose"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

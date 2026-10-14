@@ -1,0 +1,102 @@
+# Dependencies & Package Managers
+node_modules/
+.pnp
+.pnp.js
+
+# Production & Web Build Outputs
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.cache/
+.parcel-cache/
+.eslintcache/
+.oxlintcache/
+
+# Logs & Diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Python Environments & Interpreters
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.Python
+bin/
+include/
+lib/
+lib64/
+
+# Python Cache, Bytecode & Testing
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.ipynb_checkpoints/
+
+# ML Models & Binary Artifacts (Exclude untracked/intermediate binaries)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+*.weights
+*.bin
+*.tflite
+*.pb
+
+# Whitelist essential reproduced model artifacts & dataset required for CrimePulse execution
+!ml-service/crime-prediction/model/reproduced/*.joblib
+!ml-service/crime-prediction/data/*.csv
+
+# Environment Variables, Secrets & Certificates
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+
+# Local Databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Operating System & Editor Files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.idea/
+.vscode/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

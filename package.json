@@ -1,0 +1,23 @@
+{
+  "name": "crimepulse",
+  "version": "1.0.0",
+  "description": "CrimePulse — Intelligent Crime Pattern Forecasting & Analytics Platform",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./start-crimepulse.ps1",
+    "stop": "powershell -ExecutionPolicy Bypass -File ./stop-crimepulse.ps1",
+    "status": "powershell -ExecutionPolicy Bypass -File ./check-crimepulse.ps1",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "test:backend": "npm --prefix backend test",
+    "test:frontend": "npm --prefix frontend test"
+  },
+  "keywords": [
+    "crimepulse",
+    "crime-prediction",
+    "fastapi",
+    "express",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC"
+}

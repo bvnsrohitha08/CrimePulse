@@ -1,0 +1,3 @@
+"""
+CrimePulse API Routes package.
+"""
